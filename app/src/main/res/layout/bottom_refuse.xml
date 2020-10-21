@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?> <!--拒绝-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shape">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="拒绝理由"
+            android:textColor="#333333"
+            android:textSize="20dp" />
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/editTextRefuseReason"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_card_gray"
+            android:ems="10"
+            android:hint="请输入拒绝理由"
+            android:padding="10dp"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="180dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_cancel_shape"
+                android:text="取消"
+                android:textColor="#4390EF" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_active_shape"
+                android:text="确认"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
