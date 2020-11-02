@@ -27,6 +27,5 @@ public class DialogAndViewActivity extends AppCompatActivity {
         System.out.println("显示");
         final AlertDialog alertDialog=dialog.show();
         System.out.println("退出");
-        alertDialog.dismiss();
     }
 }

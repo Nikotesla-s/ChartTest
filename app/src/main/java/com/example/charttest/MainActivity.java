@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Entry> values1 = new ArrayList<>();
         ArrayList<Entry> values2 = new ArrayList<>();
+        ArrayList<Entry> values3 = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             float val = (float) (Math.random() * (5 + 1)) + 10;
             values1.add(new Entry(i, val));
@@ -31,10 +32,16 @@ public class MainActivity extends AppCompatActivity {
             float val = (float) (Math.random() * (5 + 1)) + 10;
             values2.add(new Entry(i, val));
         }
+
+        for (int i = 0; i < 10; i++) {
+            float val = (float) (Math.random() * (5 + 1)) + 10;
+            values3.add(new Entry(i, val));
+        }
         Drawable drawable1 = getResources().getDrawable(R.drawable.fade_blue);
-        Drawable drawable2 = getResources().getDrawable(R.drawable.fade_red);
+        Drawable drawable2 = getResources().getDrawable(R.drawable.fade_green);
         chartUtil.showLineChart(values1,"曲线1",Color.RED,drawable1);
         chartUtil.addLine(values2,"曲线2",Color.BLUE,drawable2);
+        chartUtil.addLine(values3,"曲线1",Color.GREEN,drawable1);
 
 
     }
